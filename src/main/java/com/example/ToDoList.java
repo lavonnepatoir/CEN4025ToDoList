@@ -15,7 +15,7 @@ public class ToDoList {
     public ToDoList() {}
 
     public ToDoList(String task) {
-        this.task = task;
+        this.task = scrub(task);
     }
 
     public int getId() {
@@ -26,4 +26,13 @@ public class ToDoList {
         return task;
     }
 
+    private String scrub(String input) {
+        if (input == null) {return null;}
+
+        return input.replace("&", "&amp;")
+                .replace("<", "&lt;")
+                .replace(">", "&gt;")
+                .replace("\"", "&quot;")
+                .replace("'", "&#x27;");
+    }
 }
