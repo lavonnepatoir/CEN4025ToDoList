@@ -1,0 +1,4 @@
+1. How are code maintainability and simplicity related?
+Code that is uncluttered, simple to grasp, and understand is also easier to fix and maintain long-term.
+2. Runtime efficiency and code simplicity are often competing goals. How can you deal with this problem? Is it possible to have code that is both simple and efficient?
+Balancing runtime efficiency and code simplicity is possible by beginning the review and optimization of projects quickly, so that any inefficiencies can be caught and resolved as quickly as possible. It is definitely possible to have both efficiency and simplicity! It starts with the basics, like reusing code when possible, and staying organized throughout the length of the project. 
